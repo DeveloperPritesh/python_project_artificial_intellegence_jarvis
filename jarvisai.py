@@ -89,11 +89,11 @@ def sendEmail(to,content): # send email function takes recipents email id and co
     server = smtplib.SMTP('smtp.gmail.com', 587) #This class manages a connection to an SMTP or ESMTP server.
     server.ehlo()  #SMTP 'ehlo' command. Hostname to send for this command defaults to the FQDN of the local host.
     server.starttls() #Puts the connection to the SMTP server into TLS mode.
-    server.login('pritesh3038@gmail.com', 'Bankofbaroda0.') #Log in on an SMTP server that requires authentication.
-# The arguments are:
-#
-# user: The user name to authenticate with.
-# password: The password for the authentication.
+    server.login('**********@gmail.com', '*********') #Log in on an SMTP server that requires authentication.
+    # The arguments are:
+    #
+    # user: The user name to authenticate with.
+    # password: The password for the authentication.
     server.sendmail('pritesh3038@gmail.com', to, content) #This command performs an entire mail transaction.
     server.close() #closes the SMTP server . IMPORTANT!
     
